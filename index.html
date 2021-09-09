@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Anime Rating Survey Form</h1>
+    <p id="description">Please fill out this form, Thank you.</p>
+
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">
+            Name 
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </label>
+
+        <label for="email" id="email-label">
+            Email 
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+
+        <label for="number" id="number-label">
+            Age 
+            <input type="number" id="number" placeholder="How old are you? "min="16 "max="45">
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            What is your favorite top anime?
+            <select name="dropdown" id="dropdown">
+                <option value="aot">Attack on Titan</option>
+                <option value="dn">Death Note</option>
+                <option value="fsn">Fate/Stay Night: Heaven Feel's</option>
+                <option value="jjk">Jujutsu Kaisen</option>
+            </select>
+        </label>
+        
+        <label for="character" id="character-label">
+            Who is your favorite anime characters?
+        </label>
+        <input type="radio" name="character" value="levi" checked>Levi Ackerman <br>
+        <input type="radio" name="character" value="light">Yagami Light <br>
+        <input type="radio" name="character" value="saitama">Saitama<br>
+        <input type="radio" name="character" value="eren">Eren Yeager<br>
+        <input type="radio" name="character" value="jeanne">Jeanne D'alter<br>
+        <input type="radio" name="character" value="gilgamesh">Gilgamesh<br>
+
+        <br><br>
+        <label for="favorite">
+            Which is your favorite anime? 
+        </label>
+        <input type="checkbox" value="aot">Attack on Titan <br>
+        <input type="checkbox" value="tokrev">Tokyo Revengers <br>
+        <input type="checkbox" value="dn">Death Note<br>
+        <input type="checkbox" value="knw">Kimi no Nawa<br>
+        <input type="checkbox" value="violet">Violet Evergarden<br>
+        <input type="checkbox" value="fate">Fate Series<br>
+        <input type="checkbox" value="jjk">Jujutsu Kaisen<br>
+        <input type="checkbox" value="sg">Steins;Gate<br>
+        <input type="checkbox" value="noragami">Noragami<br>
+
+        <br><br>
+
+        <label for="comment" id="comment">
+            Any comments or suggestions?
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </label>
+
+        <button type="submit" id="submit" name="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
